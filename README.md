@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Deploy to Dokku
-        uses: mjr/github-actions-deploy-dokku@v1.2
+        uses: mjr/github-actions-deploy-dokku@v2
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           ssh-port: ${{ secrets.SSH_PORT }}
