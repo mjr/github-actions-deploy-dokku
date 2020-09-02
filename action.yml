@@ -1,4 +1,4 @@
-name: "Deploy to Dokku"
+name: "Deployment to Dokku"
 author: "Manaia Junior"
 description: "Deploy to Dokku instance using Github Actions"
 branding:
