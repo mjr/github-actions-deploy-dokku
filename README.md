@@ -27,4 +27,5 @@ jobs:
           ssh-port: ${{ secrets.SSH_PORT }}
           dokku-host: ${{ secrets.DOKKU_HOST }}
           app-name: ${{ secrets.DOKKU_APP_NAME }}
+          remote-branch: branch-name
 ```
