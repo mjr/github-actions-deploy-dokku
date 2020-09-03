@@ -9,9 +9,9 @@ name: Deploy to Dokku
 
 on:
   push:
-    branches: [ branch-name ]
+    branches: [branch-name]
   pull_request:
-    branches: [ branch-name ]
+    branches: [branch-name]
 
 jobs:
   deploy:
@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Deploy to Dokku
-        uses: mjr/github-actions-deploy-dokku@v1.4
+        uses: mjr/github-actions-deploy-dokku@v2
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           ssh-port: ${{ secrets.SSH_PORT }}
